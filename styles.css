@@ -1,0 +1,107 @@
+/* Appliquer une hauteur de 100% à tout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.table-container {
+    max-width: 90%;
+    margin: 0 auto; /* Centrage */
+    padding-bottom: 20px; /* Ajoute un peu d’espace en bas */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une légère ombre */
+    border-radius: 10px; /* Arrondi les bords */
+    overflow: hidden; /* Cache les bords dépassants */
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.title-container {
+    text-align: center;
+    position: relative;
+    top: 80px; /* Ajuste la hauteur */
+    z-index: 10;
+}
+
+
+/* Wrapper qui prend toute la hauteur de la page */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: rgba(200, 200, 200, 0.8);
+    transition: background 0.3s ease-in-out;
+}
+.navbar:hover {
+    background: rgb(70, 70, 70);
+}
+
+/* Contenu qui pousse le footer en bas */
+.content {
+    flex: 1;
+}
+body {
+    background-image: url('images/background.jpeg'); /* Change l'image */
+    background-size: cover; /* Adapte la taille */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* Fixe l'image pour un effet élégant */
+    color: white; /* Rend le texte blanc pour un bon contraste */
+}
+
+.card {
+    min-height: 220px; /* Augmente la hauteur minimale */
+    width: 100%; /* Assure qu'elles prennent toute la largeur de la colonne */
+    padding: 20px; /* Ajoute plus d'espace interne */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le contenu */
+    align-items: center; /* Centre le texte */
+}
+
+
+.card:hover {
+    transform: translateY(-5px); /* Effet de légère élévation au survol */
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Bleu foncé élégant */
+    margin: 20px 0;
+}
+
+
+/* Footer en bas */
+footer {
+    width: 100vw; /* S'assure qu'il occupe 100% de la largeur de l'écran */
+    background-color: #222; /* Fond sombre élégant */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative; /* Pour ne pas chevaucher d'autres éléments */
+    left: 0;
+    margin-top: 30px; /* Ajoute un espace entre le contenu et le footer */
+
+}
+
+footer p {
+    margin: 0; /* Supprime tout espacement indésirable */
+}
+
+main {
+    flex: 1; /* Permet au contenu principal de prendre tout l’espace disponible */
+}
