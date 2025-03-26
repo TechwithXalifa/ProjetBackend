@@ -87,9 +87,3 @@ $result = mysqli_query($conn, $query);
     </div>
 </body>
 </html>
-<?php
-session_start();
-session_destroy();
-header("Location: login.php");
-exit();
-?>

@@ -15,13 +15,13 @@ $query_nationalite = "SELECT nationalite, COUNT(*) AS total FROM nageurs GROUP B
 $result_nationalite = mysqli_query($conn, $query_nationalite);
 
 // Meilleurs temps par épreuve
-$query_meilleur_temps = "SELECT e.type, MIN(s.temps) AS meilleur_temps
+$query_meilleur_temps = "SELECT e.type, MIN(s.`temps (secondes)`) AS meilleur_temps
                          FROM score s JOIN epreuves e ON s.idEpreuve = e.id
                          GROUP BY e.type";
 $result_meilleur_temps = mysqli_query($conn, $query_meilleur_temps);
 
 // Moyenne des temps par épreuve
-$query_moyenne_temps = "SELECT e.type, AVG(s.temps) AS moyenne_temps
+$query_moyenne_temps = "SELECT e.type, AVG(s.`temps (secondes)`) AS moyenne_temps
                         FROM score s JOIN epreuves e ON s.idEpreuve = e.id
                         GROUP BY e.type";
 $result_moyenne_temps = mysqli_query($conn, $query_moyenne_temps);
