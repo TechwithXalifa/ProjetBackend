@@ -5,7 +5,7 @@ include("../config.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
-
+    
     $query = "SELECT * FROM admins WHERE username='$username' AND password=SHA1('$password')";
     $result = mysqli_query($conn, $query);
 
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "Nom d'utilisateur ou mot de passe incorrect.";
     }
 }
-?>
+?> 
 <!DOCTYPE html>
 <html>
 <head>
