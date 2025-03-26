@@ -51,14 +51,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="card text-center">
-                    <img src="images/arbitres.png" class="card-img-top" alt="Image des arbitres">
-                    <div class="card-body">
-                        <h5 class="card-title">⚖️ Arbitres</h5>
-                        <p class="card-text">Consultez la liste des arbitres du tournoi</p>
-                        <a href="arbitres.php" class="btn btn-primary">Voir plus</a>
-                    </div>
-            </div> -->
 
             <!-- Entraîneurs -->
             <div class="col-md-4">
@@ -77,7 +69,7 @@
                     <div class="card-body">
                         <h5 class="card-title">📊 Statistiques</h5>
                         <p class="card-text">Analysez les performances et tendances</p>
-                        <a href="statistiques.php" class="btn btn-primary">Voir plus</a>
+                        <a href="admin/statistiques.php" class="btn btn-primary">Voir plus</a>
                     </div>
                 </div>
             </div>

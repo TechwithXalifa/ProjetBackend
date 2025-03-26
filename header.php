@@ -2,6 +2,7 @@
 // Détection du niveau du dossier
 $base_path = (basename(dirname($_SERVER['PHP_SELF'])) == 'admin') ? '../' : '';
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -32,7 +33,6 @@ $base_path = (basename(dirname($_SERVER['PHP_SELF'])) == 'admin') ? '../' : '';
                 <li class="nav-item"><a class="nav-link" href="<?php echo $base_path; ?>medailles.php">Médailles</a></li>
                 
                 <?php if (isset($_SESSION['admin'])) { ?>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo $base_path; ?>admin/admin.php">Admin</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-danger text-white ms-3" href="<?php echo $base_path; ?>admin/logout.php">Déconnexion</a></li>
                 <?php } else { ?>
                     <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-3" href="<?php echo $base_path; ?>admin/login.php">Connexion</a></li>
